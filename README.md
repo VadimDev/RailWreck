@@ -1,4 +1,5 @@
-<ins>*The project was created for a resume and is not compilable; only headers are provided for review.*</ins>
+<ins>*The project was created for a resume and is not compilable; only headers are provided for review.*</ins> <br />
+The focus was on functionality, not on graphics, and Unreal Engine 5 was used.
 
 The project was created with the aim of training people in various specialties in a virtual reality environment.
 The foundation of everything is transferred to the FlowCore plugin, which contains an Event-Managers system based on the observer pattern, which is tied into the game mode (from which we can get the ExperienceManager, and from it, for example, the ScenarioManager, UIManager, get the resource we need, or subscribe to the mailing list of events we are interested in, such as the use of tools, game events, expired game timers.
@@ -83,7 +84,6 @@ https://www.youtube.com/watch?v=PaD4DQmxG-A
 [<img src="https://github.com/VadimDev/RailWreck/blob/master/ForReadme/webp/10.webp" width="50%">](https://www.youtube.com/watch?v=PaD4DQmxG-A)
 
 The game begins in the Hub, where the user selects the scenario of interest:
-
 ![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/2.jpg)
 
 Hazardous materials that will be encountered:
@@ -98,8 +98,7 @@ You can choose day or night time, the presence of fire on the map, and whether t
 For interacting with the surrounding world, the player has several tools, including a **laser** allowing the selection of menu items and triggering actions on game objects, and a **teleport** for quick movement in the virtual environment.
 After selecting a scenario, it is necessary to interact with the player's hands by pressing on columns simulating buttons.
 
-From the Approach Distance widget, the gameplay begins, where you are prompted to choose a safe distance for positioning the rescue vehicle, and this result contributes to the final score.
-
+From the Approach Distance widget, the gameplay begins, where you are prompted to choose a safe distance for positioning the rescue vehicle, and this result contributes to the final score:
 ![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/3.jpg)
 
 If the distance is chosen incorrectly, a notification is displayed at the start:
@@ -137,7 +136,7 @@ To eliminate spills in tanks, there is a tool called the **Slime Bomb** which pl
 If we forget which substance we are dealing with, we can use the **material detector** by calling it from the Wrist Menu:
 ![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/webp/15.webp)
 
-For spills, it is necessary to set up a tent
+For spills, it is necessary to set up a tent:
 ![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/webp/16.webp)
 
 
@@ -147,4 +146,5 @@ After completing all actions, or in case of critical errors, the user returns to
 <br />
 <br />
 View of the hub and the structure of the project in the editor:
+
 <img src="https://github.com/VadimDev/RailWreck/blob/master/ForReadme/18.jpg" width="70%"><img src="https://github.com/VadimDev/RailWreck/blob/master/ForReadme/19.jpg" width="70%">
