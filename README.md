@@ -11,9 +11,9 @@ It also has basic classes for characters, controllers, game modes, and various o
 
 Also, the VRExpansionPlugin is used: https://github.com/mordentral/VRExpansionPlugin
 
-![alt text](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/Scheme.png)
+![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/Scheme.png)
 
-![alt text](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/1.jpg)
+![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/1.jpg)
 
 **BaseManager**
 
@@ -73,3 +73,78 @@ UExperienceManager::DispatchEvent(UBaseEvent* Event) passes the event to each su
         Listener->HandleEvent(Event);
     }
 ```
+
+# Rail Wreck
+The main task of the project is to create a simulation of a railway accident for practicing the containment of spills and fire involving hazardous materials, for training specialists, but in the safe environment of virtual reality.
+
+Click on the link below to see the full demo: <br />
+https://www.youtube.com/watch?v=PaD4DQmxG-A 
+
+[<img src="https://github.com/VadimDev/RailWreck/blob/master/ForReadme/webp/10.webp" width="50%">](https://www.youtube.com/watch?v=PaD4DQmxG-A)
+
+The game begins in the Hub, where the user selects the scenario of interest:
+
+![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/2.jpg)
+
+Hazardous materials that will be encountered:
+
+* Crude Oil
+* Chlorine
+* Liquid Propane Gas
+* Sulfuric Acid
+
+You can choose day or night time, the presence of fire on the map, and whether there is a chemical spill.
+
+For interacting with the surrounding world, the player has several tools, including a **laser** allowing the selection of menu items and triggering actions on game objects, and a **teleport** for quick movement in the virtual environment.
+After selecting a scenario, it is necessary to interact with the player's hands by pressing on columns simulating buttons.
+
+From the Approach Distance widget, the gameplay begins, where you are prompted to choose a safe distance for positioning the rescue vehicle, and this result contributes to the final score.
+
+![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/3.jpg)
+
+If the distance is chosen incorrectly, a notification is displayed at the start:
+![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/4.jpg)
+
+Scene in the editor:
+![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/5.jpg)
+![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/6.jpg)
+![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/7.jpg)
+![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/8.jpg)
+
+Putting on and adding items is done by taking them in hands and bringing them close to the player's torso:
+![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/webp/9.webp)
+
+All the inventory is located in the vehicle, and there are three types of fire hoses:
+
+* Water
+* Ground Monitor
+* Foam
+
+Some substances cannot be extinguished with water as it may cause an explosion:
+![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/webp/10.webp)
+
+For the material chlorine, there are three different sets depending on the type of container randomly selected. These sets are located in boxes near the vehicle and are called Emergency Kit A, B, C:
+![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/webp/11.webp)
+
+To eliminate a chemical spill, you need to click on the spill object with the laser. If you have the correct tool, you will be able to eliminate the spill, otherwise, a message will appear indicating that something is missing:
+![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/webp/12.webp)
+
+
+To eliminate spills in tanks, there is a tool called the **Slime Bomb** which plugs the hole. When it is taken, it is added as a new object in the **Wrist Menu**. This is a convenient tool from which different sub-menus with inventory or game commands and hints in virtual reality can be called. It attaches to the hand: <br />
+![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/webp/13.webp)
+![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/webp/14.webp)
+
+If we forget which substance we are dealing with, we can use the **material detector** by calling it from the Wrist Menu:
+![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/webp/15.webp)
+
+For spills, it is necessary to set up a tent
+![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/webp/16.webp)
+
+
+After completing all actions, or in case of critical errors, the user returns to the hub where they can review the results and start the training again: <br />
+![](https://github.com/VadimDev/RailWreck/blob/master/ForReadme/webp/17.webp)
+<br />
+<br />
+<br />
+View of the hub and the structure of the project in the editor:
+<img src="https://github.com/VadimDev/RailWreck/blob/master/ForReadme/18.jpg" width="70%"><img src="https://github.com/VadimDev/RailWreck/blob/master/ForReadme/19.jpg" width="70%">
